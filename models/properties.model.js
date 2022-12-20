@@ -2,10 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const MapSchema = Schema({
     lat: {
-        type: String
+        type: Number
     },
     lng: {
-        type: String
+        type: Number
     }
 });
 
