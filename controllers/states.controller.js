@@ -3,7 +3,7 @@ const { response } = require('express');
 const State = require('../models/states.model');
 
 /** =====================================================================
- *  GET STATES
+ *  GET STATESS
 =========================================================================*/
 const getStates = async(req, res = response) => {
 
