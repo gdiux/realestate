@@ -1,0 +1,81 @@
+[{
+        "name": "Wifi",
+        "icon": "fi-wifi",
+        "active": false
+    },
+    {
+        "name": "A/A",
+        "icon": "fi-snowflake",
+        "active": false
+    },
+    {
+        "name": "Piscina",
+        "icon": "fi-swimming-pool",
+        "active": false
+    },
+    {
+        "name": "Gym",
+        "icon": "fi-dumbell",
+        "active": false
+    },
+    {
+        "name": "Seguridad",
+        "icon": "fi-security",
+        "active": false
+    },
+    {
+        "name": "Tiendas",
+        "icon": "fi-shop",
+        "active": false
+    },
+    {
+        "name": "Bancos",
+        "icon": "fi-museum",
+        "active": false
+    },
+    {
+        "name": "Camaras",
+        "icon": "fi-cctv",
+        "active": false
+    },
+    {
+        "name": "Alarma",
+        "icon": "fi-alert-circle",
+        "active": false
+    },
+    {
+        "name": "Super Mercados",
+        "icon": "fi-cart",
+        "active": false
+    },
+    {
+        "name": "Restaurantes",
+        "icon": "fi-cafe",
+        "active": false
+    },
+    {
+        "name": "Parques",
+        "icon": "fi-plant",
+        "active": false
+    }, {
+        "name": "Discotecas",
+        "icon": "fi-disco-ball",
+        "active": false
+    }, {
+        "name": "Panaderias",
+        "icon": "fi-cup",
+        "active": false
+    }, {
+        "name": "Iglesia",
+        "icon": "fi-building",
+        "active": false
+    }, {
+        "name": "Colegios ó Univesidades",
+        "icon": "fi-education",
+        "active": false
+    }, {
+        "name": "Hospitales",
+        "icon": "fi-heart",
+        "active": false
+    }
+]
