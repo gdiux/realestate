@@ -5,7 +5,7 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 // CONTROLLERS
-const { getPropertySeller, postProperty, getPropertyId, putProperty, getQueryProperties } = require('../controllers/properties.controller');
+const { getPropertySeller, postProperty, getPropertyId, putProperty, getQueryProperties, postViews } = require('../controllers/properties.controller');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
 
@@ -49,11 +49,24 @@ router.post('/', [
 /** =====================================================================
  *  POST PROPERTY
 =========================================================================*/
-router.post('/query', getQueryProperties);
+
+/** =====================================================================
+ *  POST PROPERTY
+=========================================================================*/
+router.post('/views/:pid', [
+        check('views', 'El nombre es olbigatorio').not().isEmpty(),
+        validarCampos
+    ],
+    postViews
+);
+/** =====================================================================
+*  POST PROPERTY
+=========================================================================*/
+
 /** =====================================================================
  *  POST QUERY
 =========================================================================*/
-
+router.post('/query', getQueryProperties);
 /** =====================================================================
  *  POST QUERY
 =========================================================================*/

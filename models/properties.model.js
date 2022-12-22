@@ -15,19 +15,9 @@ const ViewSchema = Schema({
         require: true
     },
 
-    country: {
+    fecha: {
         type: String
-    },
-
-    state: {
-        type: String
-    },
-
-    city: {
-        type: String
-    },
-
-
+    }
 });
 
 const ImgSchema = Schema({

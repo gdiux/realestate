@@ -198,6 +198,55 @@ const postProperty = async(req, res = response) => {
 =========================================================================*/
 
 /** =====================================================================
+ *  POST VIEWS OF PROPERTY
+=========================================================================*/
+const postViews = async(req, res = response) => {
+
+    try {
+
+        const pid = req.params.pid;
+        const { views } = req.body;
+
+        // COMPROBAR ID
+        if (!ObjectId.isValid(pid)) {
+            return res.status(404).json({
+                ok: false,
+                msg: 'Error en el ID de la propiedad'
+            });
+        }
+
+        const property = await Property.findById(pid);
+        if (!property) {
+            return res.status(400).json({
+                ok: false,
+                msg: 'Error 222, ponerse en contacto si el problema persiste'
+            });
+        }
+
+        property.views.push(views);
+
+        property.save();
+
+        res.json({
+            ok: true,
+            property
+        });
+
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({
+            ok: false,
+            msg: 'Error inesperado, porfavor intente nuevamente'
+        });
+    }
+
+};
+
+/** =====================================================================
+ *  POST VIEWS OF PROPERTY
+=========================================================================*/
+
+/** =====================================================================
  *  PUT PROPERTY
 =========================================================================*/
 const putProperty = async(req, res = response) => {
@@ -263,5 +312,6 @@ module.exports = {
     getPropertySeller,
     getPropertyId,
     putProperty,
-    getQueryProperties
+    getQueryProperties,
+    postViews
 };
