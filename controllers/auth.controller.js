@@ -6,7 +6,7 @@ const User = require('../models/users.model');
 const { generarJWT } = require('../helpers/jwt');
 
 /** =====================================================================
- *  LOGIN
+ *  LOGIN - LOGIN ---
 =========================================================================*/
 const login = async(req, res = response) => {
 
