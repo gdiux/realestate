@@ -4,25 +4,30 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-  <url>
-    <loc>https://99reales.com.com/</loc>
-    <lastmod>2023-01-01T15:40:57+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://99reales.com.com/login</loc>
-    <lastmod>2023-01-01T15:40:57+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://99reales.com.com/alquiler/1/all</loc>
-    <lastmod>2023-01-01T15:40:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://99reales.com.com/venta/1/all</loc>
-    <lastmod>2023-01-01T15:40:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<url>
+  <loc>https://99reales.com/login</loc>
+  <lastmod>2023-01-01T15:41:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://99reales.com/registrarme</loc>
+  <lastmod>2023-01-01T15:41:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://99reales.com/inicio</loc>
+  <lastmod>2023-01-01T15:41:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://99reales.com/alquiler/1/all</loc>
+  <lastmod>2023-01-01T15:41:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://99reales.com/venta/1/all</loc>
+  <lastmod>2023-01-01T15:41:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
