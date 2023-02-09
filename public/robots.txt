@@ -1,4 +1,4 @@
 # start of file
 user-agent: *
-allow: /downloads/
+allow: /
 Sitemap: https://99reales.com/sitemap.xml
