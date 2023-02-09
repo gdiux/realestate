@@ -3,6 +3,7 @@ require('dotenv').config();
 const path = require('path');
 
 const express = require('express');
+const robots = require('express-robots-txt')
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
@@ -24,6 +25,9 @@ app.use(express.urlencoded({ limit: '50mb', extended: true, parameterLimit: 5000
 // DataBase
 dbConection();
 
+// ROBOTS
+app.use(robots(__dirname + '/robots.txt'));
+
 // DIRECTORIO PUBLICO
 app.use(express.static('public'));
 
@@ -36,7 +40,6 @@ app.use('/api/states', require('./routes/states.route'));
 
 app.use('/api/users', require('./routes/users.route'));
 app.use('/api/uploads', require('./routes/uploads.route'));
-
 
 // SPA
 app.get('*', (req, res) => {
