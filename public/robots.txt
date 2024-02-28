@@ -1,4 +1,0 @@
-# start of file
-user-agent: *
-allow: /
-Sitemap: https://99reales.com/sitemap.xml
